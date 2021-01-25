@@ -3,8 +3,8 @@ export class User{
     public id: number
     public nome: string
     public usuario: string
-    public senha: String
-	public foto: String
-    public tipo: String
+    public senha: string
+	public foto: string
+    public tipo: string
     public postagem: Postagem[]
 }
