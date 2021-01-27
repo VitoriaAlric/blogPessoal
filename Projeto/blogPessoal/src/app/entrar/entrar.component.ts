@@ -1,9 +1,9 @@
+import { environment } from './../../environments/environment.prod';
 import { AuthService } from './../../service/auth.service';
 import { UserLogin } from './../model/UserLogin';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment.prod';
-import { env } from 'process';
+
 
 
 @Component({
@@ -37,6 +37,7 @@ export class EntrarComponent implements OnInit {
       console.log(environment.nome)
       console.log(environment.foto)
       console.log(environment.id)
+      
       this.router.navigate(['/inicio'])
     }, erro =>{
       if(erro.status == 500){
